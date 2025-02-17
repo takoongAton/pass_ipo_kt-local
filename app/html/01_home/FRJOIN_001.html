@@ -705,8 +705,13 @@
 	function pop_open(termsTp){
 		let pop_dim = ".dim" + termsTp;
 		let pop_item = ".layer-pop" + termsTp;
-		document.querySelector(pop_dim).style.display = "block";
-		document.querySelector(pop_item).style.display = "block";
+		if(document.querySelector(pop_item)) {
+			console.log("팝업 open")
+			document.querySelector(pop_dim).style.display = "block";
+			document.querySelector(pop_item).style.display = "block";
+		} else {
+			console.log("팝업 없음")
+		}
 	}
 
 	function pop_close(termsTp){
