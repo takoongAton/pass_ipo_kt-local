@@ -329,6 +329,9 @@ div.ipo_item_list {background-color:#fff; border-radius:6px; overflow:hidden; bo
 .detail_group {}
 .detail_group + .detail_group {margin-top:10px;}
 .detail_group > div.tit {height:48px; padding:12px 20px; color:var(--text-basic-default); font-size:16px; line-height:24px; font-weight:bold;}
+.detail_group > .subtit {padding:14px 18px; line-height:1em;}
+.detail_group > .subtit span {display:inline-block; position:relative; padding-left:0.5em; color:#666666; font-size:14px; line-height:20px;}
+.detail_group > .subtit span::before {content:"·"; display:inline-block; position:absolute; top:0; left:0; color:inherit; font-size:inherit; line-height:inherit; font-weight:bold;}
 
 .detail_group .detail_content {position:relative;}
 .detail_group .detail_content p.txt {color:var(--text-basic-discription); font-size:14px; line-height:1.57142em;}
@@ -417,7 +420,7 @@ div.ipo_item_list {background-color:#fff; border-radius:6px; overflow:hidden; bo
 
 
 /* 블러 처리용 그룹 */
-.sub_group {display:block; position:relative; padding:0 18px 10px;}
+.sub_group {display:block; position:relative; padding:0 18px 20px;}
 .sub_group div.blur {content:""; position:absolute; top:66px; left:0; bottom:0; width:100%; background: rgba(255,255,255,0.5); -webkit-backdrop-filter:blur(4px); backdrop-filter: blur(4px);}
 /* // 블러 처리용 그룹 */
 /* // 기업분석 상세 컨턴츠 */
