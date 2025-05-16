@@ -330,7 +330,7 @@ div.ipo_item_list {background-color:#fff; border-radius:6px; overflow:hidden; bo
 .detail_group + .detail_group {margin-top:10px;}
 .detail_group > div.tit {height:48px; padding:12px 20px; color:var(--text-basic-default); font-size:16px; line-height:24px; font-weight:bold;}
 .detail_group > .subtit {padding:14px 18px; line-height:1em;}
-.detail_group > .subtit span {display:inline-block; position:relative; padding-left:0.5em; color:#666666; font-size:14px; line-height:20px;}
+.detail_group > .subtit span {display:inline-block; position:relative; padding-left:0.5em; color:var(--text-basic-discription); font-size:14px; line-height:20px;}
 .detail_group > .subtit span::before {content:"·"; display:inline-block; position:absolute; top:0; left:0; color:inherit; font-size:inherit; line-height:inherit; font-weight:bold;}
 
 .detail_group .detail_content {position:relative;}
@@ -429,8 +429,8 @@ div.ipo_item_list {background-color:#fff; border-radius:6px; overflow:hidden; bo
 /* 홈 */
 
 /* 홈 배너 */
-.home_bnr {padding:20px 18px 0;}
-.home_ipo_wrap {padding:0 18px 10px;}
+.home_bnr {padding:20px 18px;}
+.home_ipo_wrap {padding:0 18px 20px;}
 .home_ipo_wrap div.tit strong {display:block; height:48px; padding:12px 2px; color:#000; font-size:16px; line-height:1.5em; font-weight:700;}
 /* // 홈 배너 */
 
@@ -586,7 +586,7 @@ div.ipo_item_list {background-color:#fff; border-radius:6px; overflow:hidden; bo
 /* 홈 추가 수정 */
 
 /* 홈 배너 영역 */
-.home_bnr {background-color:#fff;}
+/* .home_bnr {background-color:#fff;} */
 /* // 홈 배너 영역 */
 
 /* 홈 핫키워드 영역 */

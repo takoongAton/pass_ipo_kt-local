@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+	<title>공보주정보 서비스_KT</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+	
+	<!-- font -->
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=block" rel="stylesheet" />
+	
+	<!-- css -->
+	<link rel="stylesheet" href="../../css/reset.css" />
+	<link rel="stylesheet" href="../../css/slick.css" />
+	<link rel="stylesheet" href="../../css/ipo_service.css" />
+<style>
+.home_ipo_wrap div.tit {display:flex; justify-content:space-between; align-items:center;}
+.home_ipo_wrap div.tit span {color:#666666; font-size:12px;}
+
+/* 홈 뉴스 */
+.home_news_wrap {padding:0 18px 20px;}
+.home_news_wrap div.tit {display:flex; justify-content:space-between; align-items:center;}
+.home_news_wrap div.tit strong {display:block; height:48px; padding:12px 2px; color:#000; font-size:16px; line-height:1.5em; font-weight:700;}
+.home_news_wrap div.tit span {color:#666666; font-size:12px;}
+.home_news_wrap .news_list {border-radius:6px; background-color:#fff; box-shadow:0 2px 4px rgba(0,0,0,0.03);}
+.home_news_wrap .news_list div.item {display:flex; gap:12px; padding:14px 18px;}
+.home_news_wrap .news_list div.item + div.item {border-top:1px solid #ddd;}
+.home_news_wrap .news_list div.item .thum {width:70px; min-width:70px; }
+.home_news_wrap .news_list div.item .thum span {display:block; border-radius:6px; font-size:0; line-height:0; overflow:hidden;}
+.home_news_wrap .news_list div.item .thum img {width:70px; height:70px; border-radius:4px; overflow:hidden;}
+.home_news_wrap .news_list div.item .txt_wrap {display:flex; flex-direction:column; gap:4px;}
+.home_news_wrap .news_list div.item .txt_wrap .tit {color:#000; font-size:16px; line-height:1.5em; font-weight:500;}
+.home_news_wrap .news_list div.item .txt_wrap .date {display:block; color:#999999; font-size:12px; line-height:22px;}
+/* // 홈 뉴스 */
+
+/* 홈 알림 */
+.home_alert_wrap {padding:0 18px 20px;}
+.home_alert_wrap div.tit {display:flex; justify-content:space-between; align-items:center;}
+.home_alert_wrap div.tit strong {display:block; height:48px; padding:12px 2px; color:#000; font-size:16px; line-height:1.5em; font-weight:700;}
+.home_alert_wrap div.tit span {color:#666666; font-size:12px;}
+.home_alert_wrap .alert_list {border-radius:6px; background-color:#fff; box-shadow:0 2px 4px rgba(0,0,0,0.03);}
+/* // 홈 알림 */
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+	<div class="header_wrap">
+		<div class="temp">
+			<h1>공모주정보</h1>
+			<button type="button" class="btn_close"><span><img src="../../images/temp/btn_top_close.png" alt="앱종료"></span></button>
+		</div>
+		<!-- // temp 삭제 -->
+		
+		<nav>
+			<ul class="header_nav">
+				<li class="item"><button type="button" class="active"><span>홈</span></button></li>
+				<li class="item"><button type="button"><span>IPO 일정</span></button></li>
+				<li class="item"><button type="button"><span>기업분석</span></button></li>
+				<li class="item"><button type="button"><span>뉴스</span></button></li>
+				<li class="item"><button type="button"><span>알림</span></button></li>
+			</ul>
+		</nav>
+		<!-- // nav-->
+	</div>
+	<!-- // header_wrap -->
+
+	<div class="container_wrap">
+
+		<section class="container">
+
+			<div class="content_wrap">
+				<div class="content_mid">
+
+					<div class="home_bnr"><img src="../../images/temp/banner_promotionB_full.png" alt="배너"></div>
+
+					<div class="home_ipo_wrap">
+						<div class="tit">
+							<strong>IPO 일정</strong>
+							<span>전체보기</span>
+						</div>
+						
+						<div class="ipo_date_list">
+							<!-- <strong class="date">2024.05.07</strong> -->
+							<div class="ipo_item_list">
+								<div class="ipo_item" onclick="">
+									<div class="thum">
+										<span><img src="../../images/temp/img_millie.png" alt="아이콘"></span>
+									</div>
+									<div class="txt_wrap">
+										<div class="code_name">
+											<div>
+												<strong class="name">밀리의서재</strong>
+												<span class="status"><img src="../../images/home/ico_listed.png" alt="상장"></span>
+											</div>
+											<!-- <span class="code">(450520)</span> -->
+										</div>
+										<div class="info">
+											<dl>
+												<dt>시초가</dt>
+												<dd>41,100원</dd>
+											</dl>
+											<dl>
+												<dt>상장일</dt>
+												<dd>2024.06.01</dd>
+											</dl>
+										</div>
+									</div>
+								</div>
+
+								<div class="ipo_item" onclick="">
+									<div class="thum">
+										<span><img src="../../images/temp/img_inswave.png" alt="아이콘"></span>
+									</div>
+									<div class="txt_wrap">
+										<div class="code_name">
+											<div>
+												<strong class="name">인스웨이브시스템즈</strong>
+												<span class="status"><img src="../../images/home/ico_listed.png" alt="상장"></span>
+											</div>
+											<!-- <span class="code">(450520)</span> -->
+										</div>
+										<div class="info">
+											<dl>
+												<dt>시초가</dt>
+												<dd>41,100원</dd>
+											</dl>
+											<dl>
+												<dt>상장일</dt>
+												<dd>2024.06.01</dd>
+											</dl>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- // date_item -->
+
+						</div>
+						<!-- // ipo_date_list -->
+
+					</div>
+					<!-- // home_ipo_wrap -->
+
+					<div class="home_news_wrap">
+						<div class="tit">
+							<strong>뉴스</strong>
+							<span>전체보기</span>
+						</div>
+
+						<div class="news_list">
+							<div class="item">
+								<div class="thum">
+									<span><img src="../../images/temp/sam_news_96x96.png" alt="썸네일"></span>
+								</div>
+								<div class="txt_wrap">
+									<p class="tit">샘 올트먼, 레딧 대주주였다…IPO로 투자성공 사례 쓸까</p>
+									<span class="date">2025.05.16</span>
+								</div>
+							</div>
+							<div class="item">
+								<div class="thum">
+									<span><img src="../../images/temp/sam_news_96x96.png" alt="썸네일"></span>
+								</div>
+								<div class="txt_wrap">
+									<p class="tit">샘 올트먼, 레딧 대주주였다…IPO로 투자성공 사례 쓸까</p>
+									<span class="date">2025.05.16</span>
+								</div>
+							</div>
+							<div class="item">
+								<div class="thum">
+									<span><img src="../../images/temp/sam_news_96x96.png" alt="썸네일"></span>
+								</div>
+								<div class="txt_wrap">
+									<p class="tit">샘 올트먼, 레딧 대주주였다…IPO로 투자성공 사례 쓸까</p>
+									<span class="date">2025.05.16</span>
+								</div>
+							</div>
+						</div>
+						<!-- // news_list -->
+					</div>
+					<!-- // home_news_wrap -->
+
+					<div class="home_alert_wrap">
+						<div class="tit">
+							<strong>알림</strong>
+							<span>전체보기</span>
+						</div>
+<style>
+.home_alert_wrap .alert_list .item {padding:14px 18px;}
+.home_alert_wrap .alert_list .item + .item {border-top:1px solid #ddd;}
+.home_alert_wrap .alert_list .item .tit_wrap {display:flex; justify-content:space-between; align-items:center; gap:6px;}
+.home_alert_wrap .alert_list .item .tit_wrap span.ico {display:flex; align-items:center; width:16px; min-width:16px;}
+.home_alert_wrap .alert_list .item .tit_wrap span.ico img {display:inline-block; width:16px; height:16px;}
+.home_alert_wrap .alert_list .item .tit_wrap strong.tit {flex:1; font-size:16px; line-height:1.5em; font-weight:500;}
+.home_alert_wrap .alert_list .item .tit_wrap span.date {color:#999999; font-size:12px; line-height:18px;}
+.home_alert_wrap .alert_list .item .alert_con {margin-top:4px; padding-left:22px; color:#999999; font-size:12px; line-height:20px;}
+</style>						
+						<div class="alert_list">
+							<div class="item">
+								<div class="tit_wrap">
+									<span class="ico"><img src="../../images/home/ic-certiinfo.png" alt="알림"></span>
+									<strong class="tit">공모주 청약 정보</strong>
+									<span class="date">2025.05.16 11:11</span>
+								</div>
+								<div class="alert_con">
+									1.청약일정<br />
+									- abc종목: 금일(2/21)까지 삼성증권, 키움증권 통해 청약<br />
+									- aaa종목: 내일(2/22)까지 NH투자증권 통해 청약
+								</div>
+							</div>
+							<div class="item">
+								<div class="tit_wrap">
+									<span class="ico"><img src="../../images/home/ic-certiinfo.png" alt="알림"></span>
+									<strong class="tit">공모주 청약 정보</strong>
+									<span class="date">2025.05.16 11:11</span>
+								</div>
+								<div class="alert_con">
+									1.청약일정<br />
+									- abc종목: 금일(2/21)까지 삼성증권, 키움증권 통해 청약<br />
+									- aaa종목: 내일(2/22)까지 NH투자증권 통해 청약
+								</div>
+							</div>
+							<div class="item">
+								<div class="tit_wrap">
+									<span class="ico"><img src="../../images/home/ic-certiinfo.png" alt="알림"></span>
+									<strong class="tit">공모주 청약 정보</strong>
+									<span class="date">2025.05.16 11:11</span>
+								</div>
+								<div class="alert_con">
+									1.청약일정<br />
+									- abc종목: 금일(2/21)까지 삼성증권, 키움증권 통해 청약<br />
+									- aaa종목: 내일(2/22)까지 NH투자증권 통해 청약
+								</div>
+							</div>
+						</div>
+						<!-- // alert_list -->
+					</div>
+					<!-- // home_alert_wrap -->
+
+				</div>
+				<!-- // content_mid -->
+
+				<div class="main_notice">
+					<div><button type="button"><span class="ico"><img src="../../images/home/ico_notice.png" alt="공지사항"></span><span class="txt">공지사항</span></button></div>
+					<div><button type="button"><span class="ico"><img src="../../images/home/ico_faq.png" alt="자주 묻는 질문"></span><span class="txt">자주 묻는 질문</span></button></div>
+					<div><button type="button"><span class="ico"><img src="../../images/home/ico_guide.png" alt="이용안내"></span><span class="txt">이용안내</span></button></div>
+				</div>
+				<!-- // main_notice -->
+
+
+				<div class="main_footer">
+					<p><strong>서비스 제공사 : (주)아톤</strong><span class="btn_privacy">개인정보처리방침</span></p>
+
+					<p>
+						서비스 가입/ 해지문의<br />
+						<span>080-869-4273(무료)</span><br />
+						(평일) 09:00~18:00 (점심시간 12:00~13:00)
+					</p>
+
+					<p>* 본 서비스는 가입 즉시 서비스가 개시되는 상품으로 청약철회가 불가능합니다. (전자상거래 등에서의 소비자보호에 관한 법률 제17조 2항 5호에 따라 디지털 콘텐츠의 제공이 개시된 경우 청약철회를 제공하지 않습니다.)</p>
+					
+					<p>* 서비스를 이용할 때 가입한 요금제에 따라 데이터 요금이 발생할 수 있습니다.</p>
+				</div>
+				<!-- // main_footer -->
+				
+			</div>
+			
+		</section><!-- // container -->
+		
+	</div><!-- // container_wrap -->
+
+
+	<!-- <div class="footer_wrap">
+		<div class="btnGroup">
+			<div>
+				<button type="button" class="btn line" disabled=""><span>취소</span></button>
+			</div>
+			<div>
+				<button type="button" class="btn fill"><span>확인</span></button>
+			</div>
+		</div>
+	</div> -->
+	<!-- // footer_wrap (하단 고정 영역) -->
+
+</div><!-- // wrap -->
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="../../js/slick.js"></script>
+
+<script src="../../js/temp.js"></script>
+
+<script>
+$(document).ready(function(){
+	function mainBenefitSlick(){
+		$('.benefit_bnr_list').slick({
+			dots: true,
+			dotsClass: "main_benefit_dot",
+			infinite: true,
+			arrows: false,
+		});
+	}
+	mainBenefitSlick();
+
+
+	function mainReportSlick(){
+		$('.report_list').slick({
+			dots: false,
+			dotsClass: "main_slide_dot",
+			infinite: true,
+			arrows: false,
+			slidesToShow: 2,
+        	// slidesToScroll: 1,
+			centerMode: true,
+			centerPadding : '20px'
+		});
+	}
+	// mainReportSlick();
+})
+</script>
+</body>
+</html>
